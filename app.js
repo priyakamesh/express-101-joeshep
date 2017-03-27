@@ -4,7 +4,8 @@ require('dotenv').config();//look for .env file
 const express = require('express');
 const app = express();
 //routes modules
-const animalRoutes = require('./routes/animals')
+const animalRoutes = require('./routes/animals');
+const games = require('./routes/games');
 //middleware are placed b/w request and a response (example: transform stream)
 const requestTime = (req,res,next)=>{//req,res and next objects are available for all the middlewares
   req.requestedTime = Date.now();
@@ -20,6 +21,7 @@ app.use(express.static(__dirname + '/public')) //tell express to add this to mid
 
 app.use(requestTime)
 app.use(animalRoutes)
+app.use(games)
 app.use((req,res)=>{//last middleware in the stack
   res.send('no fred')
 })
