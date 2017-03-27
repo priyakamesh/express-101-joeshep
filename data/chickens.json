@@ -1,0 +1,12 @@
+{ "chickens" :
+  [
+    {
+      "name": "Foghorn Leghorn",
+      "breed": "mutant"
+    },
+    {
+      "name": "San Diego",
+      "breed": "mascot"
+    }
+  ]
+}

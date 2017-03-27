@@ -5,7 +5,7 @@ const gameRouter = Router();
 
 gameRouter.get('/boardgames',(req,res,next)=>{
   console.log('Fetching some boardgames');
-  res.sendFile(path.join(__dirname,'../public','boardGames.html'));;
+  res.sendFile(path.join(__dirname,'../public','boardGames.html'));
 });
 
 gameRouter.get('/videogames',(req,res,next)=>{
