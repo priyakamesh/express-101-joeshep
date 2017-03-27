@@ -14,7 +14,8 @@ gameRouter.get('/videogames',(req,res,next)=>{
 });
 
 gameRouter.post('/videogames',(req,res,next)=>{
-  console.log("Submitted a form  request for videogames")
+  console.log("Submitted a form  request for videogames");
+  res.send('Submitted')
 });
 
 module.exports = gameRouter;

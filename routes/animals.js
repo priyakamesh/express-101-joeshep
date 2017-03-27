@@ -22,6 +22,7 @@ animalRouter.get('/chickens', (req,res,next)=>{
 
 animalRouter.post('/chickens',(req,res,next)=>{
   console.log("Posting chicken request");
+  res.send('posted chicken request')
 });
 
 
